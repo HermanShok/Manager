@@ -1,4 +1,4 @@
-# homeworkers
+# Manager
 My  C# console project created while learning programming.
 
 ## Features
