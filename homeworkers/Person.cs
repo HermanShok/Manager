@@ -8,16 +8,15 @@ namespace homeworkers
 {
     internal class Person
     {
-        
+
         public string name;
-        public string geburt;
         public string phon;
         public string address;
         public string city;
         public string email;
         public override string ToString()
         {
-            return $"Name:{name}\nData:{geburt}\nPhon:{phon}\nAddress:{address}\nCity:{city}\nE-mail:{email}";
+            return $"Name:{name}\nPhon:{phon}\nAddress:{address}\nCity:{city}\nE-mail:{email}";
             
         }
     }

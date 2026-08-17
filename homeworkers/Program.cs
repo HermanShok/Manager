@@ -14,10 +14,12 @@ namespace homeworkers
             Console.WriteLine("2.Add person");
             Console.WriteLine("3.Show names");
             Console.WriteLine("4.Delete name");
+            Console.WriteLine("5.Make changes");
             Console.WriteLine("0.Exit");
         }
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             PrintMenu();
             var personManager = new PersonManager();
             while (true)
@@ -38,10 +40,13 @@ namespace homeworkers
                             personManager.TakePerson();
                             break;
                         case 3:
-                            personManager.ShowPerson();
+                            personManager.ShowPersonsWithIndexes();
                             break;
                         case 4:
                             personManager.DeletePerson();
+                            break;
+                        case 5:
+                            personManager.MakeChanges();
                             break;
                         default:
                             Console.WriteLine("This option does not exist.");
